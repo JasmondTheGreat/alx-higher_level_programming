@@ -1,0 +1,2 @@
+#!/bin/bash
+temp_file=$(mktemp);echo "#/bin/bash" > temp_file;echo "$PYCODE" >> temp_file;python3 temp_file;rm temp_file
