@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 import this
-print(f"{this}")
-del this
+my_str = this.s
+print(f"{my_str[0:0]}")
