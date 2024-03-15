@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-
+alphabets = ""
 for i in range(97, 123):
-    print(chr(i), end="")
+    alphabets += "{}".format(chr(i))
+
+print(alphabets, end="")
