@@ -18,7 +18,7 @@ int check_cycle(listint_t *list)
 
 	for (cur_node = list; cur_node != NULL; cur_node = cur_node->next)
 	{
-		if (cur_node->next == head)
+		if (cur_node->next == head && head != NULL)
 		{
 			isCycle = 1;
 			break;
