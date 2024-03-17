@@ -25,8 +25,6 @@ int check_cycle(listint_t *list)
 			isCycle = 1;
 			break;
 		}
-		else if (cur_node->next == NULL)
-			return (0);
 	}
 
 	return (isCycle);
