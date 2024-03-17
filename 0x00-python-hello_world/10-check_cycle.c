@@ -13,7 +13,6 @@ int check_cycle(listint_t *list)
 {
 
 	listint_t *cur_node;
-	listint_t *head = list;
 	int isCycle = 0;
 
 	if (list == NULL || list->next == NULL)
@@ -21,7 +20,7 @@ int check_cycle(listint_t *list)
 
 	for (cur_node = list; cur_node != NULL; cur_node = cur_node->next)
 	{
-		if (cur_node->next == head)
+		if (cur_node->next == list)
 		{
 			isCycle = 1;
 			break;
