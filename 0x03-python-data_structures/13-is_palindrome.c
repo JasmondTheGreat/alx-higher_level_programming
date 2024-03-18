@@ -26,8 +26,6 @@ int is_palindrome(listint_t **head)
 	for (curr = *head, len = 0; curr != NULL; curr = curr->next)
 		len++;
 
-	printf("Len: %d\n", len);
-
 	/* Allocate a array space using the length */
 	addresses = malloc(sizeof(listint_t) * len);
 
@@ -43,6 +41,8 @@ int is_palindrome(listint_t **head)
 			break;
 		}
 	}
+
+	free(addresses);
 
 	return (isPalindrome);
 }
