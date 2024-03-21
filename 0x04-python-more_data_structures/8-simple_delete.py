@@ -10,3 +10,5 @@ def simple_delete(a_dictionary, key=""):
 
     if key_exists:
         del a_dictionary[key]
+
+    return a_dictionary
