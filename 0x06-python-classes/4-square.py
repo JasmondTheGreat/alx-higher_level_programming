@@ -42,4 +42,3 @@ class Square:
         Sets the size
         """
         self.__size = value
-
