@@ -17,28 +17,15 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
 
-    def area(self):
-        """
-        Calcs the area
-
-        Returns:
-            int: the area
-        """
-        return self.__size ** 2
+        self.__size = size
 
     @property
     def size(self):
-        """
-        Gets the size
-
-        Returns:
-            int: the size
-        """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """
-        Sets the size
-        """
         self.__size = value
+
+    def area(self):
+        return self.size ** 2
