@@ -64,4 +64,4 @@ class Rectangle:
         return result_str
 
     def __repr__(self):
-        return repr()
+        return f"Rectangle({self.width}, {self.height})"
